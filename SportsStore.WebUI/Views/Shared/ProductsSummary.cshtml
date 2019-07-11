@@ -9,4 +9,12 @@
     </h3>
     <span class="lead">@Model.Description</span>
 
+    @using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        <div class="pull-right">
+            @Html.HiddenFor(x=>x.ProductID)
+            @Html.Hidden("returnUrl",Request.Url.PathAndQuery)
+            <input type="submit" class="btn btn-success" value="添加到购物车" />
+        </div>
+    }
 </div>
