@@ -1,0 +1,15 @@
+SET IDENTITY_INSERT [dbo].[Products] ON
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (1, N'可口可乐', N'喜欢喝的可乐', CAST(3.00 AS Decimal(18, 2)), N'汽水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (2, N'芬达', N'多种口味喜欢你', CAST(3.00 AS Decimal(18, 2)), N'汽水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (3, N'鲜橙多', N'美妙橙汁包容你', CAST(3.00 AS Decimal(18, 2)), N'果汁水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (4, N'百事可乐', N'肥宅快乐水', CAST(3.00 AS Decimal(18, 2)), N'汽水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (5, N'雪碧', N'透心凉，心飞扬', CAST(3.00 AS Decimal(18, 2)), N'汽水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (6, N'营养快线', N'早餐可以喝的', CAST(5.00 AS Decimal(18, 2)), N'奶制饮料')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (7, N'果粒橙', N'多指多肉', CAST(3.00 AS Decimal(18, 2)), N'果汁水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (8, N'和其正', N'清热解暑，就喝和其正？', CAST(4.00 AS Decimal(18, 2)), N'凉茶')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (9, N'冰红茶', N'好喝的茶', CAST(4.00 AS Decimal(18, 2)), N'凉茶')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (10, N'王老吉', N'凉茶就喝王老吉', CAST(4.00 AS Decimal(18, 2)), N'凉茶')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (11, N'旺仔', N'鲜浓牛奶，好喝的奶', CAST(5.00 AS Decimal(18, 2)), N'奶制饮料')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (12, N'百岁山', N'天然矿物泉水', CAST(3.00 AS Decimal(18, 2)), N'纯净水')
+INSERT INTO [dbo].[Products] ([ProductID], [Name], [Description], [Price], [Category]) VALUES (13, N'凉白开', N'最好喝的水', CAST(1.00 AS Decimal(18, 2)), N'纯净水')
+SET IDENTITY_INSERT [dbo].[Products] OFF

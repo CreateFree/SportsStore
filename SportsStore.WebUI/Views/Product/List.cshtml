@@ -3,17 +3,17 @@
 @using SportsStore.WebUI.HtmlHelpers
 
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
     ViewBag.Title = "Products";
 }
 
-@foreach(var p in Model.Products)
+@foreach (var p in Model.Products)
 {
-    <div>
-        <h3>@p.Name</h3>
-        @p.Description
-        <h4>@p.Price.ToString("c")</h4>
-    </div>
+    @Html.Partial("ProductsSummary",p)
 }
-<div>
-   @Html.PageLinks(Model.PagingInfo, x=>Url.Action("List",new { page =x}))
+<div class="btn-group pull-right">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
 </div>
