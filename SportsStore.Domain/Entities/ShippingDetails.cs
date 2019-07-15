@@ -29,6 +29,6 @@ namespace SportsStore.Domain.Entities
 
         [Required(ErrorMessage ="请输入一个国家名称")]
         public string Country { get; set; }
-        public string GifWrap { get; set; }
+        public bool GiftWrap { get; set; }
     }
 }

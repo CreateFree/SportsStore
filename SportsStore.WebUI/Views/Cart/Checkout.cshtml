@@ -9,6 +9,7 @@
 
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary()
     <h3>发送到：</h3>
     <div class="form-group">
         <label>姓名：</label>
@@ -62,7 +63,7 @@ foreach (var property in ViewData.ModelMetadata.Properties)
     <h3>可选：</h3>
     <div class="checkbox">
         <label>
-            @Html.EditorFor(x=>x.GifWrap)
+            @Html.EditorFor(x=>x.GiftWrap)
             Gift wrap thest items
         </label>
     </div>
